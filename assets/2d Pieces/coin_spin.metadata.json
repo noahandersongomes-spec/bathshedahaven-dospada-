@@ -1,0 +1,46 @@
+{
+	"animation_name": "gold_coin_spinning_and_glinting",
+	"animation_style": "",
+	"animation_type": "gold coin spinning and glinting",
+	"columns": 4,
+	"directions": [],
+	"frame_count": 4,
+	"frame_height": 16,
+	"frame_paths": [],
+	"frame_regions": [
+		{
+			"h": 16,
+			"w": 16,
+			"x": 0,
+			"y": 0
+		},
+		{
+			"h": 16,
+			"w": 16,
+			"x": 16,
+			"y": 0
+		},
+		{
+			"h": 16,
+			"w": 16,
+			"x": 32,
+			"y": 0
+		},
+		{
+			"h": 16,
+			"w": 16,
+			"x": 48,
+			"y": 0
+		}
+	],
+	"frame_width": 16,
+	"name": "coin_spin",
+	"prompt": "gold coin spinning and glinting",
+	"rows": 1,
+	"source_image": "res://assets/generated/coin.png",
+	"source_tool": "animate_sprite",
+	"spritesheet_height": 16,
+	"spritesheet_path": "res://assets/generated/coin_spin.png",
+	"spritesheet_width": 64,
+	"type": "animation"
+}

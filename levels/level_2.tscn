@@ -2,9 +2,9 @@
 
 [ext_resource type="TileSet" uid="uid://cussn0308rclb" path="res://ground_tileset.tres" id="1_tileset"]
 [ext_resource type="Script" uid="uid://b2jwlooi0mbwb" path="res://player.gd" id="2_player"]
-[ext_resource type="Texture2D" uid="uid://d2m3q0gx7gyws" path="res://assets/generated/player_idle.png" id="3_idle"]
+[ext_resource type="Texture2D" uid="uid://d2m3q0gx7gyws" path="res://assets/2d Pieces/player_idle.png" id="3_idle"]
 [ext_resource type="Script" uid="uid://cvae50r8wn3cq" path="res://portal.gd" id="4_portal"]
-[ext_resource type="Texture2D" uid="uid://bp6n3xaky3n55" path="res://assets/generated/portal_glow.png" id="5_5722l"]
+[ext_resource type="Texture2D" uid="uid://bp6n3xaky3n55" path="res://assets/2d Pieces/portal_glow.png" id="5_5722l"]
 [ext_resource type="Script" uid="uid://bj6gfxtcn2c83" path="res://coin_spawner.gd" id="6_spawner"]
 [ext_resource type="Script" uid="uid://c28cr53gfwib0" path="res://coin_hud.gd" id="7_hud"]
 

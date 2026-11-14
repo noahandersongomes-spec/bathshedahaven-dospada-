@@ -1,13 +1,13 @@
 [gd_scene format=4 uid="uid://b72v2ayo1w7cq"]
 
-[ext_resource type="Texture2D" uid="uid://de42t46q38l1k" path="res://assets/generated/ground_top.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://de42t46q38l1k" path="res://assets/2d Pieces/ground_top.png" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://b2jwlooi0mbwb" path="res://player.gd" id="1_player"]
-[ext_resource type="Texture2D" uid="uid://bahwjecwhwl4s" path="res://assets/generated/ground_dirt.png" id="2_h2yge"]
-[ext_resource type="Texture2D" uid="uid://d2m3q0gx7gyws" path="res://assets/generated/player_idle.png" id="2_idle"]
+[ext_resource type="Texture2D" uid="uid://bahwjecwhwl4s" path="res://assets/2d Pieces/ground_dirt.png" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://cvae50r8wn3cq" path="res://portal.gd" id="3_portal"]
-[ext_resource type="Texture2D" uid="uid://bp6n3xaky3n55" path="res://assets/generated/portal_glow.png" id="6_7mycd"]
-[ext_resource type="Script" path="res://coin_spawner.gd" id="7_spawner"]
-[ext_resource type="Script" path="res://coin_hud.gd" id="8_hud"]
+[ext_resource type="Texture2D" uid="uid://b6dl2fr6wnmoa" path="res://assets/2d Pieces/w8urEm.png" id="4_5vw27"]
+[ext_resource type="Texture2D" uid="uid://bp6n3xaky3n55" path="res://assets/2d Pieces/portal_glow.png" id="6_7mycd"]
+[ext_resource type="Script" uid="uid://bj6gfxtcn2c83" path="res://coin_spawner.gd" id="7_spawner"]
+[ext_resource type="Script" uid="uid://c28cr53gfwib0" path="res://coin_hud.gd" id="8_hud"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("1_0xm2m")
@@ -89,7 +89,9 @@ position = Vector2(160, 120)
 script = ExtResource("1_player")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=189147489]
-texture = ExtResource("2_idle")
+position = Vector2(4.7683716e-07, -0.9999981)
+scale = Vector2(0.15364584, 0.15104169)
+texture = ExtResource("4_5vw27")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1916600348]
 shape = SubResource("CapsuleShape2D_player")
@@ -108,13 +110,13 @@ autoplay = "glow"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal" unique_id=777003]
 shape = SubResource("RectangleShape2D_portal")
 
-[node name="CoinSpawner" type="Node2D" parent="."]
+[node name="CoinSpawner" type="Node2D" parent="." unique_id=1761268908]
 script = ExtResource("7_spawner")
 
-[node name="HUD" type="CanvasLayer" parent="."]
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1169744105]
 script = ExtResource("8_hud")
 
-[node name="Label" type="Label" parent="HUD"]
+[node name="Label" type="Label" parent="HUD" unique_id=690460783]
 offset_left = 24.0
 offset_top = 16.0
 offset_right = 264.0
